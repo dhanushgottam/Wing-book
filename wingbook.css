@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#05161A;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    color:white;
+    
+}
+.logo{
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    user-select: none;
+    margin-bottom: -18px;
+    margin-top: 10px;
+    color: #ff894c;
+    margin-right: 80px;
+    
+    
+}
+
+.logo a{
+    margin-left: -40px;
+    margin-bottom: 34px;
+}
+.logo a{
+    margin-right: -50px;
+    
+}
+
+.logo hr{
+    margin-right: -1400px;
+    margin-left: -90px;
+    margin-top: 25px;
+}
+
+h5{
+    margin-left: -125px;
+    margin-bottom: -36px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.b{
+    margin-left:  -40px;
+    font-size: 70px;
+    color: #ff894c;
+    margin-bottom: -9px;
+
+}
+.ook{
+    margin-bottom: -35px;
+    font-size: 21px;
+    margin-left: -38px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* for sign up button and its colors*/
+.button .btnlogin-popup{
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    outline:none;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    background-color: #ff894c;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    transition: .4s;
+}
+.button .btnlogin-popup:hover{
+    background: transparent;
+    color: white;
+}
+.button{
+    margin-top: 18px;
+}
+
+.button .btnlogin-popup{
+    border-radius: 20px;
+    
+
+}
+
+
+
+/* for top check iN and information*/
+.top-nav a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 60px;
+    margin-right: 40px;
+    letter-spacing: 1.15px;
+    
+}
+.top-nav a::after{
+    content: " ";
+    position: absolute;
+    left: 0.5px;
+    bottom: -6px;
+    width: 3px;
+    height: 2px;
+    background-color: #00fffc;
+    
+    border-radius: 4px;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+.top-nav a:hover::after{
+    transform-origin: left;
+    transform: scaleX(20);
+
+       
+}
+.top-nav{
+    margin-top: 18px;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+
+}
+
+
+
+
+/* for book option and their sub types */
+.book a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 400px;
+    margin-right: 0px;
+    letter-spacing: 1.15px;
+    cursor: pointer;
+
+}
+.book a{
+    display: block;
+
+    
+
+}
+.book{
+    margin-top: 17px;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+
+}
+.book .dropdown__menu{
+    display: none;
+    position: absolute;
+    min-width: 10px;
+    margin-top: 6px;
+
+
+
+}
+.dropdown__menu a{
+    background-size: cover;
+    
+}
+
+
+.book .dropdown__menu a{
+    margin-top: 23px;
+}
+
+
+
+.book:hover .dropdown__menu{
+    display: block;
+}
+
+
+.dropdown__menu a:hover{
+    background-color: rgb(119, 155, 169);
+    height: 30px;
+    margin-top: 20px;
+}
+
+
+
+/* info */
+.info a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-right: 25px;
+    letter-spacing: 1.15px;
+
+}
+.info a{
+    display: block;
+
+    
+
+}
+.info .info_dropdown{
+    display: none;
+    position: absolute;
+    min-width: 10px;
+    margin-top: 6px;
+   
+
+
+}
+
+.info .info_dropdown a{
+    margin-top: 23px;
+}
+
+.info{
+    margin-top: 18px;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+
+}
+.info:hover .info_dropdown{
+    display: block;
+}
+.info_dropdown a:hover{
+    background-color: rgb(119, 155, 169);
+    height: 30px;
+    margin-top: 20px;
+}
+
+
+
+
+/* for manage the flights and their sub types */
+.manage a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 0px;
+    letter-spacing: 1.15px;
+
+}
+.manage a{
+    display: block;
+
+    
+
+}
+.manage{
+    margin-top: 18px;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+
+}
+.manage .manage_dropdown{
+    display: none;
+    position: absolute;
+    min-width: 10px;
+    margin-top: 6px;
+   
+
+
+}
+
+.manage .manage_dropdown a{
+    margin-top: 23px;
+}
+
+
+.manage:hover .manage_dropdown{
+    display: block;
+}
+.manage_dropdown a:hover{
+    background-color: rgb(119, 155, 169);
+    height: 30px;
+    margin-top: 20px;
+}
+
+/* wedget*/
+div{
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    width: 80%;
+    margin:30px 50px 40px 20px;
+    align-items: center;
+    background-color: white;
+    border-radius: 9px;
+
+    
+
+    color:white;
+    
+}
+
+
+
+.wedget a{
+    background-color: white;
+    
+}
+.wedget{
+    background-color: white;
+    margin:50px;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+.booking marquee{
+    background-color: #f6638d;
+
+}
+
+.booking a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 50px;
+    margin-top: 17px;
+    font-size: 19px;
+    
+
+    
+}
+.booking h3{
+    background-color: white;
+    margin-left: 300px;
+}
+.booking h4{
+    color: blue;
+    margin-top: 0.8px;
+    background-color: white;
+
+
+}
+.input_text{
+    background-color: white;
+    width: 220px;
+    height: 50px;
+    padding: 5px;
+    border-width: 3px;
+    border-color: black;
+    margin-top: 4px;
+    font-size: 17px;
+    box-shadow: 5px 5px 20px black;
+}
+.second_input_text{
+
+    background-color: white;
+    width: 221px;
+    height: 50px;
+    padding: 5px;
+    border-width: 3px;
+    border-color: black;
+    margin-left: 260px;
+    box-shadow: 5px 5px 20px black;
+    margin-top: -101px;
+   
+}
+.second_input_text{
+    font-size: 17px;
+    color: black;
+    
+}
+
+.search .btnlogin-popup{
+    width: 160px;
+    height: 40px;
+    margin-bottom: -170px;
+    background-color: grey;
+    border: 2px solid black;
+    outline:none;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 390px;
+    transition: .4s;
+ 
+
+}
+.search .btnlogin-popup{
+    background:blue;
+    color: white;
+    cursor: pointer;
+}
+
+.search .btnlogin-popup{
+    border-radius: 4px;
+    
+
+}
+.search{
+    margin-left: 290px;
+    margin-top: 40px;
+    background: transparent;
+    
+
+}
+
+.search .btnlogin-popup{
+    margin-right:70px;
+    margin-top: -70px;
+
+
+}
+
+
+/* date and time selecto */
+.mydatetime{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    height: 47px;
+    width: 200px;
+
+}
+.dateandtime{
+    background: transparent;
+    margin-left: 440px;
+    margin-top: 15px;
+  
+    
+}
+
+
+
+/* for sub buttons under the from an to
+margin-left: -140px;
+
+*/
+
+.extra_options .btnlogin-popup{
+    
+    height: 40px;
+    margin-bottom: -220px;
+    background-color: grey;
+    border: 2px solid black;
+    outline:none;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 200px;
+    transition: .4s;
+ 
+
+}
+.extra_options{
+    width: -140px;
+    margin-left: -90px;
+}
+.extra_options .btnlogin-popup:hover{
+    background:#ff894c;
+    color: white;
+    cursor: pointer;
+}
+
+.extra_options .btnlogin-popup{
+    border-radius: 20px;
+    
+
+}
+.extra_options{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.extra_options .btnlogin-popup{
+    margin-right:70px;
+
+}
+
+
+/* image section */
+.image img{
+    width: 980px;
+    height: 390px;
+    border-radius: 9px;
+   
+
+}
+.image{
+    margin-top: 220px;
+    margin-left: -115px;
+    background: transparent;
+}
+
+
+/* offeras section */
+.offers h1{
+    font-size: 30px;
+    letter-spacing: 7%;
+    
+}
+.offers{
+    margin-top: 900px;
+    margin-left: 150px;
+    background:transparent;
+    padding: 10px;
+
+}
+.offers img{
+    gap: 10px;
+    border-radius: 20px;
+    width: 300px;
+    margin-top: 40px;
+   
+}
+.offersimg2{
+    margin-left: 20px;
+}
+
+
+.cards h1{
+    font-size: 30px;
+    letter-spacing: 10%em;
+    
+}
+.cards .inspired{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    color: white;
+    letter-spacing: 7%em;
+    margin-top: 30px;
+
+
+}
+
+.cards .inspired h4{
+    margin-right: 300px;
+}
+
+
+.cards{
+    margin-top: 1200px;
+    margin-left: 150px;
+    background: transparent;
+}
+.cards img{
+    gap: 10px;
+  
+    width: 300px;
+    margin-top: 50px;
+    
+}
+.fivethimage{
+    margin-left: 20px;
+}
+
+/* seaction for about  */
+
+.about h3 {
+    font-size: 25px;
+}
+.content h3{
+    background-color: grey;
+
+}
+.about p {
+    font-size: 18px;
+    align-items: center;
+    background-color: grey;
+}
+.about{
+    margin-top: 380px;
+    
+    margin-left: -225px;
+    width: 30%;
+    
+}
+.content{
+    background-color: grey;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -15px;
+    margin-left: 4px;
+}
+    
+ /* second content */
+.about2 h3 {
+    font-size: 27px;
+  
+}
+.para1{
+    margin-top: 22px;
+}
+
+.second_content h3{
+    background-color: grey;
+
+}
+.about2 p {
+    font-size: 18px;
+    align-items: center;
+    background-color: grey;
+    
+}
+.about2{
+    margin-top: 380px;
+    margin-left: 75px;
+    width: 27.5%;
+    
+}
+.para2{
+    margin-top: 20px;
+}
+.second_content{
+    background-color: grey;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -15px;
+    width: 300px;
+}
+
+
+/* end photo */
+.end-photo{
+    margin-top: 2150px;
+    margin-left: 140px;
+    background: transparent;
+   
+}
+.end-photo img{
+    width: 1000px;
+    
+}
+
+
+
+/* conclusion  */
+.conclusion{
+    margin-top: 1000px;
+    margin-left: -230px;
+    
+    background: transparent;
+}
+.know-about{
+    background: transparent;
+}
+.conclusion hr{
+    
+    margin-top: 50px;
+    margin-right: -150px;
+}
+.conclusion p{
+    margin-top: 20px;
+   
+}
+.know-about h3:hover{
+    color: green;
+}
+
+.conclusion2{
+    margin-top: 1000px;
+    margin-left: 100px;
+    
+    background: transparent;
+}
+.know-about2{
+    background: transparent;
+}
+.conclusion2 p{
+    margin-top: 20px;
+    cursor: pointer;
+   
+}
+.know-about2 h3:hover{
+    color: green;
+}
+
+
+.conclusion3{
+    margin-top: 1000px;
+    margin-left: 400px;
+    
+    background: transparent;
+}
+.know-about3{
+    background: transparent;
+}
+.conclusion3 p{
+    margin-top: 20px;
+   
+}
+.know-about3 h3:hover{
+    color: green;
+}
+
+.know-about3 hr{
+    margin-left: -960px;
+    margin-top: 100px;
+}
+
